@@ -12,8 +12,9 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -39,4 +40,51 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+#officeButtonDown{
+  height: 40px;
+  padding-left: 15;
+  padding-right: 15;
+  margin-left: 10;
+  margin-top: 0px;
+}
+
+#officeButtonDown #faPlus {
+  color: rgb(0, 255, 185); /* Change #yourHoverColor to whatever color you want */
+}
+
+#officeButtonDown #faRocket {
+  color: white /* Change #yourHoverColor to whatever color you want */
+}
+
+#officeButtonDown:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgb(0 0 0 / 8%);}
+
+#startButtonDown{
+  height: 40px;
+  background-color: rgb(255, 0, 102);
+  border-color: rgb(255, 0, 102);
+  padding-left: 15;
+  padding-right: 15;
+  margin-left: 0;
+  color: white;
+  margin-top: 0px;
+  font-weight: 600;
+}
+#startButtonDown:hover{
+transform: translateY(-1px);
+box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgb(0 0 0 / 8%);}
+
+.navbar, .nav, .nav-link, .nav-dropdown, .dropdown-menu, .dropdown-item {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+@media (max-width: 992px){
+  
+  #min992{
+    display: none !important;
+  }
+
 }
